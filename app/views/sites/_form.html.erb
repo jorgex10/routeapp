@@ -1,0 +1,37 @@
+<div class="col-md-6">
+  <%= form_for @site do |f| %>
+   <% if @site.errors.any? %>
+    </div>
+      <div id="error_explanation" class="alert alert-danger" role="alert">
+        <ul>
+          <% @site.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :latitude %>
+      <%= f.text_field :latitude, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :longitude %>
+      <%= f.text_field :longitude, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :url %>
+      <%= f.text_field :url, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :description %>
+      <%= f.text_area :description, class: 'form-control' %>
+    </div>
+    <br>
+    <%= f.submit 'CREATE', class: 'btn btn-primary' %>
+    <%= link_to 'CANCEL', sites_path, class: 'btn btn-danger' %>
+  <% end %>
+</div>

@@ -1,0 +1,14 @@
+<h1>
+  Sites
+  <%= link_to 'NEW', new_site_path, class: 'btn btn-primary pull-right' %>
+</h1>
+<% if !notice.blank? %>
+  <div class="alert alert-success" role="alert">
+    <%= notice %>
+  </div>
+<% end %>
+<% if @sites.blank? %>
+  <p>No sites has been registered</p>
+<% else %>
+  <%= render 'sites', sites: @sites %>
+<% end %>

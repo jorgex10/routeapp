@@ -1,0 +1,9 @@
+sites = [
+  {name: 'Interbank', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', url: 'interbank.routeapp.com', latitude: '-11.548497493589103', longitude: '-77.63908375000005'},
+  {name: 'BCP', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', url: 'bcp.routeapp.com', latitude: '-12.064682787806552', longitude: '-75.70549000000005'},
+  {name: 'Scotiabank', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', url: 'scotiabank.routeapp.com', latitude: '-7.126626887025856', longitude: '-78.43009937500005'},
+  {name: 'BBVA', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', url: 'bbva.routeapp.com', latitude: '-8.95410576843453', longitude: '-74.21134937500005'},
+  {name: 'Mi Banco', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', url: 'mibanco.routeapp.com', latitude: '-14.884915465496858', longitude: '-73.59611500000005'}
+]
+
+Site.create(sites)

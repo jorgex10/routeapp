@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: routeapp_development
+
+test:
+  <<: *default
+  database: routeapp_test
+
+production:
+  <<: *default
+  database: <%= ENV['ROUTEAPP_DATABASE'] %>
+  username: <%= ENV['ROUTEAPP_DATABASE_USERNAME'] %>
+  password: <%= ENV['ROUTEAPP_DATABASE_PASSWORD'] %>
+  host: <%= ENV['ROUTEAPP_DATABASE_HOSTNAME'] %>
+  port: <%= ENV['ROUTEAPP_DATABASE_PORT'] %>
+
