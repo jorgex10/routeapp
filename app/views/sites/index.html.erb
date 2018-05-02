@@ -1,6 +1,9 @@
 <h1>
   Sites
-  <%= link_to 'NEW', new_site_path, class: 'btn btn-primary pull-right' %>
+  <div class="pull-right">
+    <%= link_to 'NEW', new_site_path, class: 'btn btn-primary btn-sm' %>
+    <%= link_to 'SIGNOUT', destroy_user_session_path, method: :delete, class: 'btn btn-danger btn-sm' %>
+  </div>
 </h1>
 <% if !notice.blank? %>
   <div class="alert alert-success" role="alert">

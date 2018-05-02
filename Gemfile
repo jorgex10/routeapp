@@ -45,6 +45,12 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 
+# Ruby wrapper for the REST API at https://www.zendesk.com. Documentation at https://developer.zendesk.com
+gem 'zendesk_api', '~> 1.16'
+
+# Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
